@@ -1,0 +1,651 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.header .logo{
+    width: 25%;
+    height: 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+.header .nav-link{
+    width: 75%;
+    height: 80px;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+.header .nav-link ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 28px;
+}
+.header .nav-link ul li a{
+    text-decoration: none;
+    color: #6F6F6F;
+    font-weight: normal;
+    font-size: 17px;
+    font-weight: lighter;
+}
+.header .nav-link ul li a button{
+    background-color: #00572D;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.main-slider{
+    width: 100%;
+    height: 500px;
+    background-color: #00572D;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://lapinozpizza.in/assets/wla_new/lapinoz/img/banner3.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+.main-slider h1{
+    color: white;
+    font-size: 45px;
+}
+.main-slider h1 span{
+    color: #FFFF00;
+}
+.main-slider h2{
+    color: white;
+    font-size: 30px;
+}
+.main-slider .city{
+    background-color: white;
+    border: none;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px 0px 0px 30px;
+    padding: 10px;
+}
+.main-slider .outlet{
+    background-color: white;
+    border: none;
+    width: 300px;
+    height: 60px;
+    border-radius: 0px 30px 30px 0px;
+    padding: 10px;
+    margin-left: -4px;
+}
+.main-slider button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+.deals_offer{
+	width: 100%;
+	padding: 35px;
+}
+.offers{
+	width: 100%;
+	display: flex;
+}
+.offers .offer1{
+	height: 260px;
+	width: 40%;
+	margin-right: 20px;
+}
+.offers .offer2{
+	height: 260px;
+	width: 40%;
+	margin-right: 20px;
+}
+.offers .offer3{
+	height: 260px;
+	width: 20%;
+}
+.main-explore{
+    width: 100%;
+    background-color: #F8F8F8;
+    padding: 35px;
+}
+.main-explore .explore-offer{
+    padding: 0px 40px;
+    display: flex;
+}
+.main-explore .explore-offer .explore-box{
+	height: 170px;
+	width: 170px;
+	transition: 0.5s;
+}
+.main-explore .explore-offer .explore-box:hover{
+    transform: scale(1.1);
+}
+.main-explore .explore-offer .explore1{
+    background: url(https://static.uengage.in/uploads/5/image-916978-1647234748.png);
+    background-size: 100% 100%;
+}
+.main-explore .explore-offer .explore2{
+    background: url(https://static.uengage.in/uploads/5/image-524842-1647234748.png);
+    background-size: 100% 100%;
+}
+.main-explore .explore-offer .explore3{
+    background: url(https://static.uengage.in/uploads/5/image-869576-1647234748.png);
+    background-size: 100% 100%;
+}
+.main-explore .explore-offer .explore4{
+    background: url(https://static.uengage.in/uploads/5/image-252314-1647234748.png);
+    background-size: 100% 100%;
+}
+.main-explore .explore-offer .explore5{
+    background: url(https://static.uengage.in/uploads/5/image-147537-1647234748.png);
+    background-size: 100% 100%;
+}
+.main-explore .explore-offer .explore6{
+    background: url(https://static.uengage.in/uploads/5/image-916978-1647234748.png);
+    background-size: 100% 100%;
+    animation: changeImages 0.5s infinite;
+}
+.main-explore .explore-offer .explore-offer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	margin-right: 30px;
+
+}
+.main-explore .explore-offer h4{
+    text-align: center;
+    margin-top: 10px;
+}
+@keyframes changeImages{
+    0%{
+        background-image: url(https://static.uengage.in/uploads/5/image-916978-1647234748.png);
+        background-size: 100% 100%;
+    }
+    20%{
+        background-image: url(https://static.uengage.in/uploads/5/image-524842-1647234748.png);
+        background-size: 100% 100%;
+    }
+    40%{
+        background-image: url(https://static.uengage.in/uploads/5/image-869576-1647234748.png);
+        background-size: 100% 100%;
+    }
+    60%{
+        background-image: url(https://static.uengage.in/uploads/5/image-252314-1647234748.png);
+        background-size: 100% 100%;
+    }
+    80%{
+        background-image: url(https://static.uengage.in/uploads/5/image-147537-1647234748.png);
+        background-size: 100% 100%;
+    }
+    100%{
+        background-image: url(https://static.uengage.in/uploads/5/image-916978-1647234748.png);
+        background-size: 100% 100%;
+    }
+}
+.main-seller{
+    width: 100%;
+    padding: 35px;
+}
+.main-seller .seller-div{
+    padding: 0px 40px;
+    display: flex;
+}
+.main-seller .seller-div .seller1{
+    width: 27%;
+    height: 330px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.main-seller .seller-div .seller2{
+    width: 27%;
+    height: 330px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.main-seller .seller-div .seller3{
+    width: 27%;
+    height: 330px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.main-seller .seller-div .seller4{
+    width: 19%;
+    height: 330px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.main-seller .seller-div .seller1 .seller-bg{
+    width: 100%;
+    height: 250px;
+    background: url(https://static.uengage.in/uploads/5/image-7139-1654761655.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.main-seller .seller-div .seller1 .seller-info{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+.main-seller .seller-div .seller1 .seller-info p{
+    font-size: 20px;
+}
+.main-seller .seller-div .seller1 .seller-info small{
+    color: #6F6F6F;
+    font-size: 14px;
+    line-height: 30px;
+}
+.main-seller .seller-div .seller2 .seller-bg{
+    width: 100%;
+    height: 250px;
+    background: url(https://static.uengage.in/uploads/5/image-7493-1654761662.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.main-seller .seller-div .seller2 .seller-info{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+.main-seller .seller-div .seller2 .seller-info p{
+    font-size: 20px;
+}
+.main-seller .seller-div .seller2 .seller-info small{
+    color: #6F6F6F;
+    font-size: 14px;
+    line-height: 30px;
+}
+.main-seller .seller-div .seller3 .seller-bg{
+    width: 100%;
+    height: 250px;
+    background: url(https://static.uengage.in/uploads/5/image-8255-1654761665.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.main-seller .seller-div .seller3 .seller-info{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+.main-seller .seller-div .seller3 .seller-info p{
+    font-size: 20px;
+}
+.main-seller .seller-div .seller3 .seller-info small{
+    color: #6F6F6F;
+    font-size: 14px;
+    line-height: 30px;
+}
+.main-seller .seller-div .seller4 .seller-bg{
+    width: 100%;
+    height: 250px;
+    background: url(https://static.uengage.in/uploads/5/image-6672-1654761670.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.main-seller .seller-div .seller4 .seller-info{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+.main-seller .seller-div .seller4 .seller-info p{
+    font-size: 20px;
+}
+.main-seller .seller-div .seller4 .seller-info small{
+    color: #6F6F6F;
+    font-size: 14px;
+    line-height: 30px;
+}
+.main-stores{
+    width: 100%;
+    height: 300px;
+    background-color: #F8F8F8;
+    padding: 35px;
+}
+.main-stores .stores-div{
+    padding: 0px 40px;
+    display: flex;
+}
+.main-stores .stores-div .stores1{
+    width: 27%;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.main-stores .stores-div .stores2{
+    width: 27%;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.main-stores .stores-div .stores3{
+    width: 27%;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.main-stores .stores-div .stores4{
+    width: 19%;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.main-stores .stores-div .stores1 .up{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+.main-stores .stores-div .stores1 .up h3{
+    font-size: 23px;
+    color: #006630;
+}
+.main-stores .stores-div .stores1 .up small{
+    font-size: 15px;
+    color: #006630;
+    line-height: 40px;
+}
+.main-stores .stores-div .stores1 .down{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right,#80C19E,#51A076);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.main-stores .stores-div .stores1 .down{
+    color: white;
+    font-size: 18px;
+}
+.main-stores .stores-div .stores1 .down .call{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+}
+.main-stores .stores-div .stores2 .up{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+.main-stores .stores-div .stores2 .up h3{
+    font-size: 23px;
+    color: #006630;
+}
+.main-stores .stores-div .stores2 .up small{
+    font-size: 15px;
+    color: #006630;
+    line-height: 40px;
+}
+.main-stores .stores-div .stores2 .down{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right,#F78A85,#EC645D);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.main-stores .stores-div .stores2 .down{
+    color: white;
+    font-size: 18px;
+}
+.main-stores .stores-div .stores2 .down .call{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+}
+.main-stores .stores-div .stores3 .up{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+.main-stores .stores-div .stores3 .up h3{
+    font-size: 23px;
+    color: #006630;
+}
+.main-stores .stores-div .stores3 .up small{
+    font-size: 15px;
+    color: #006630;
+    line-height: 40px;
+}
+.main-stores .stores-div .stores3 .down{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right,#EFE1A8,#F1DD87);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.main-stores .stores-div .stores3 .down{
+    color: black;
+    font-size: 18px;
+}
+.main-stores .stores-div .stores3 .down .call{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+}
+.main-stores .stores-div .stores4 .up{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+.main-stores .stores-div .stores4 .up h3{
+    font-size: 23px;
+    color: #006630;
+}
+.main-stores .stores-div .stores4 .up small{
+    font-size: 15px;
+    color: #006630;
+    line-height: 40px;
+}
+.main-stores .stores-div .stores4 .down{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right,#80C19E,#51A076);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.main-stores .stores-div .stores4 .down{
+    color: white;
+    font-size: 18px;
+}
+.main-stores .stores-div .stores4 .down .call{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+}
+.banner{
+    padding: 35px;
+    text-align: center;
+}
+.banner img{
+    border-radius: 10px;
+}
+.main-feedback{
+    width: 100%;
+    padding: 35px;
+}
+.main-feedback .feedback-div{
+    padding: 0px 40px;
+    display: flex;
+    gap: 20px;
+}
+.main-feedback .feedback-div .feedback1,.feedback2{
+    width: 50%;
+    padding: 30px;
+    background-color: #F8F8F8;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+}
+.main-location{
+    width: 100%;
+    padding: 25px 35px;
+    background-color: #24572C;
+}
+.main-location h2{
+    color: white;
+}
+.main-location .location-a{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    align-items: center;
+    padding-top: 30px;
+}
+.main-location .location-a .first-latter{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    color: #24572C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.city-name{
+    padding: 10px;
+    background-color: #bbf3dc14;
+    color: white;
+    border-radius: 10px;
+}
+.main-app{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px 200px;
+    gap: 50px;
+    background-color: #F8F8F8;
+}
+.main-app .app-info{
+    width: 50%;
+}
+.main-app .app-info p{
+    font-size: 18px;
+    color: #6F6F6F;
+}
+.main-app .app-info ul{
+    margin-left: 40px;
+}
+.main-app .app-info .app-store{
+    display: flex;
+    gap: 20px;
+}
+.main-app .app-info ul li{
+    color: #6F6F6F;
+    font-size: 18px;
+    line-height: 30px;
+}
+.main-app .app-img{
+    width: 50%;
+}
+.main-app .app-img img{
+    border-radius: 10px;
+}
+.footer{
+    width: 100%;
+    background-color: #00572D;
+    padding: 30px 130px 10px 130px;
+}
+.main-footer{ 
+    display: flex;
+    justify-content: space-between;
+}
+.main-footer .useful-link,.payment,.contact{
+    width: 33.33;
+}
+.main-footer .title{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-footer .useful-link p{
+    color: white;
+    line-height: 30px;
+}
+.main-footer .payment .smart-card img{
+    border-radius: 5px;
+}
+.main-footer .contact .social-media{
+    display: flex;
+    gap: 10px;
+}
+.main-footer .contact .social-media .media-logo{
+    width: 40px;
+    height: 40px;
+    border: 3px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.main-footer .contact p{
+    color: white;
+}
+.border{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.copy{
+    text-align: center;
+}
+.copy span{
+    color: white;
+}
